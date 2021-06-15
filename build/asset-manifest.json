@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f4ef639d.chunk.css",
+    "main.js": "/static/js/main.3cae1a44.chunk.js",
+    "main.js.map": "/static/js/main.3cae1a44.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a0dadeee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a0dadeee.js.map",
+    "static/js/2.a55e559a.chunk.js": "/static/js/2.a55e559a.chunk.js",
+    "static/js/2.a55e559a.chunk.js.map": "/static/js/2.a55e559a.chunk.js.map",
+    "static/js/3.a6b14f5c.chunk.js": "/static/js/3.a6b14f5c.chunk.js",
+    "static/js/3.a6b14f5c.chunk.js.map": "/static/js/3.a6b14f5c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f4ef639d.chunk.css.map": "/static/css/main.f4ef639d.chunk.css.map",
+    "static/js/2.a55e559a.chunk.js.LICENSE.txt": "/static/js/2.a55e559a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/GlacialIndifference-Regular.663a1c12.otf",
+    "static/media/loading.c3afa0b1.gif": "/static/media/loading.c3afa0b1.gif",
+    "static/media/logo-rec.f1ca0071.png": "/static/media/logo-rec.f1ca0071.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0dadeee.js",
+    "static/js/2.a55e559a.chunk.js",
+    "static/css/main.f4ef639d.chunk.css",
+    "static/js/main.3cae1a44.chunk.js"
+  ]
+}
