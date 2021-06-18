@@ -3,6 +3,26 @@
   src: url('./res/font/GlacialIndifference-Regular.otf');
 }
 
+*{
+  scrollbar-width: thin;
+  scrollbar-color: #F78C6C #35363A;
+  color: #B2B7C4;
+}
+
+*::-webkit-scrollbar {
+  width: 18px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #35363A;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F78C6C;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #35363A;  /* creates padding around scroll thumb */
+}
+
 body {
   margin: 0;
   font-family: 'Glacial Indifference';
@@ -10,7 +30,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+

@@ -35,6 +35,11 @@
     padding: 4vw 2vw 0vw 2vw;
 }
 
+.definition-container-plain{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 .definition-type{
     text-align: left;
     margin: 0;
@@ -44,4 +49,49 @@
     text-align: left;
     margin-top: 0;
     font-size: x-large;
+    width: fit-content;
+    display: inline-block;
+}
+
+
+
+.uk-comment-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 2% auto;
+    padding: 10px 0 0 0;
+    list-style-type: none;
+}
+
+.fc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.uk-comment-list .uk-comment~ul {
+    margin: 0 0 0 0;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.main{
+    background-color: #4A4C52;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 5px;
+}
+
+hr{
+    width: 45%;
+    border-top: 1px solid #6D7078;
+    margin: 0 auto;
+}
+
+.uk-text-meta{
+    display: inline;
+}
+
+address, dl, fieldset, figure, ol, p, pre, ul {
+    margin: 0;
 }

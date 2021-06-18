@@ -34,10 +34,11 @@ const CustomKana = (kana, reading) => (
     />
 );
 
-const Definition = (definition) => (
-    <div>
+const Definition = (definition, i) => (
+    <div key={i} className="definition-container-plain">
         <p className="definition-type">{definition.type}</p>
         <p className="definition-text">{definition.text}</p>
+        <p className="uk-text-meta">&nbsp;{definition.tags}</p>
     </div>
 );
 
@@ -51,20 +52,39 @@ class ResultCard extends React.Component{
         const data = this.props.data;
         //const { kana, reading, spanishDefs} = this.props.data;
         return(
-            <div className="ResultCard">
-                <div className="kana-container">
-                    {CustomKana(data.japanese[0].word, data.japanese[0].reading)}
-                    {Definition(data.spanishDefs[0])}
-                </div>
+            // <div className="ResultCard">
+            //     <div className="kana-container">
+            //         {CustomKana(data.japanese[0].word, data.japanese[0].reading)}
+            //         {Definition(data.spanishDefs[0])}
+            //     </div>
                 
-                <div className="definition-container">
-                    {data.spanishDefs.map((definition, index) => (
-                        <div key={index}>
-                            {index === 0 ? null : Definition(definition)}
-                        </div>
-                    ))}
-                </div>
-            </div>
+            //     <div className="definition-container">
+            //         {data.spanishDefs.map((definition, index) => (
+            //             <div key={index}>
+            //                 {index === 0 ? null : Definition(definition)}
+            //             </div>
+            //         ))}
+            //     </div>
+            // </div>
+            <span>
+                <ul className="uk-comment-list">
+                    <li className="fc">
+                        <article className="uk-comment main">
+                            {CustomKana(data.japanese[0].word, data.japanese[0].reading)}
+                        </article>
+                        <ul>
+                            <li>
+                                <article className="uk-comment">
+                                {data.spanishDefs.map((definition, index) => (
+                                    Definition(definition, index)
+                                ))}
+                                </article>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr></hr>
+            </span>
         );
     }
         
