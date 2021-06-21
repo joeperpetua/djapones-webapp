@@ -6,7 +6,7 @@ class About extends React.Component{
         return(
             <div>
                 <h2>Información sobre el proyecto</h2>
-                <p>A desarollar a futuro...</p>
+                <p>A desarollar en un futuro...</p>
             </div>
         );
     };
