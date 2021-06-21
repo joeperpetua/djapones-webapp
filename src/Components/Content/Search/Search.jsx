@@ -1,7 +1,8 @@
 import React from 'react';
 import SearchBar from '../SubComponents/SearchBar/SearchBar';
 import ResultCard from '../SubComponents/ResultCard/ResultCard';
-import loading from '../../../res/loading.gif';
+import loading from '../../../res/loading-dark.gif';
+import './Search.css';
 
 class Search extends React.Component{
     constructor(props){
@@ -48,7 +49,10 @@ class Search extends React.Component{
             return (
                 <div>
                     <SearchBar tooltip='hidden' query={this.state.request[1]} lang={this.state.request[0]} />
-                    <img src={loading} alt="Cargando" width="300vw" />
+                    <img src={loading} alt="Cargando" width="300vw" className="gif" />
+                    {/* <video loop>
+                        <source src={loading} type="video/mp4" />
+                    </video> */}
                 </div>
             );
         } else {

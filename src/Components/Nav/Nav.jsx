@@ -4,7 +4,7 @@ import './Nav.css';
 
 function Nav() {
     return(
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="true">
+        <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar="true">
             <div className="uk-navbar-center">
                 <div className="uk-navbar-center-left"><Link to="/about">Info</Link></div>
                 <Link to="/" className="uk-navbar-item uk-logo"><img src={logo} alt="Logo"/></Link>
