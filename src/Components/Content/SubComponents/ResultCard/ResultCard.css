@@ -43,6 +43,7 @@
 .definition-type{
     text-align: left;
     margin: 0;
+    color: #ff760c;
 }
 
 .definition-text{
@@ -84,7 +85,7 @@
 
 hr{
     width: 45%;
-    border-top: 1px solid #6D7078;
+    border-top: 1px solid #ff760c;
     margin: 0 auto;
 }
 

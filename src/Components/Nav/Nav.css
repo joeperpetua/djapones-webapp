@@ -30,9 +30,17 @@ li{
 a{
     text-decoration: none;
     vertical-align: middle;
+    color: #ff760c;
+    font-weight: bolder;
+    font-size: 1.25rem;
 }
 
 a img{
     height: 50px;
     margin: 10px 0 0 0;
+}
+
+.uk-navbar-center-left, .uk-navbar-center-right {
+    position: absolute;
+    top: 1.75rem;
 }

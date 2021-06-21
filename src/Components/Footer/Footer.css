@@ -1,4 +1,6 @@
-.Footer{
-    bottom: 0;
-    height: 20vh;
+#page-footer, #page-wrapper:after {
+    height: 60px;
+}
+#page-footer {
+    background-color: #28292C;
 }

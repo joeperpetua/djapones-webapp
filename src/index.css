@@ -5,7 +5,7 @@
 
 *{
   scrollbar-width: thin;
-  scrollbar-color: #F78C6C #35363A;
+  scrollbar-color: #ff760c #35363A;
   color: #B2B7C4;
 }
 
@@ -18,7 +18,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #F78C6C;    /* color of the scroll thumb */
+  background-color: #ff760c;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #35363A;  /* creates padding around scroll thumb */
 }

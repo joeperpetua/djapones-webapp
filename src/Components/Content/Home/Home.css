@@ -1,0 +1,13 @@
+.Home{
+    margin: 2% 0;
+}
+
+.guide{
+    width: 60%;
+    margin: 5% auto;
+    text-align: left;
+}
+
+.guide ul{
+    display: block;
+}
