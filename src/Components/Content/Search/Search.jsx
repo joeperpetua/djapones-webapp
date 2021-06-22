@@ -56,7 +56,7 @@ class Search extends React.Component{
                 </div>
             );
         } else {
-            //console.log(results)
+            console.log(results)
             return (
                 <div>
                     <SearchBar tooltip='hidden' query={this.state.request[1]} lang={this.state.request[0]} />

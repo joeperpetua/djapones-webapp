@@ -69,6 +69,21 @@
 .fc{
     flex-direction: column;
     align-items: flex-start;
+    margin: 2% 2% 0 2%;
+    width: 100%;
+}
+
+.fc ul{
+    justify-content: flex-start;
+    flex-direction: column;
+    width: calc(100% - 30px);
+}
+
+.fc li {
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
 }
 
 .uk-comment-list .uk-comment~ul {
@@ -83,6 +98,10 @@
     border-radius: 5px;
 }
 
+.secondary{
+    width: 100%;
+}
+
 hr{
     width: 45%;
     border-top: 1px solid #ff760c;
@@ -91,8 +110,32 @@ hr{
 
 .uk-text-meta{
     display: inline;
+    margin-left: 1em;
 }
 
 address, dl, fieldset, figure, ol, p, pre, ul {
     margin: 0;
+}
+
+.other-forms-title{
+    text-align: left;
+}
+
+.other-forms{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.alternative{
+    width: 50%;
+    text-align: left;
+}
+
+@media screen and (max-width: 690px) {
+    .alternative{
+        width: 100%;
+    }
 }
