@@ -21,7 +21,7 @@
     color: #afb7c4;
 }
 
-.search-btn-ESP, .search-btn-JAP{
+.search-btn-ESP, .search-btn-JAP, .search-btn-AUTO{
     display: flex;
     width: max-content;
     line-height: 4em;
@@ -36,6 +36,10 @@
 
 .search-btn-JAP{
     background: #FF1C0C;
+}
+
+.search-btn-AUTO{
+    background: #1e87f0;
 }
 
 .search-lang{
