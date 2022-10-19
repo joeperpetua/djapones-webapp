@@ -126,16 +126,19 @@ address, dl, fieldset, figure, ol, p, pre, ul {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
 }
 
 .alternative{
-    width: 50%;
+    /* width: 50%; */
     text-align: left;
+    border-inline: solid 1px #ff760c;
+    padding-inline: 1em;
 }
 
 @media screen and (max-width: 690px) {
-    .alternative{
-        width: 100%;
+    .uk-comment-list{
+        width: 90%;
     }
 }

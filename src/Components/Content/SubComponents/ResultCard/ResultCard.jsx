@@ -66,7 +66,7 @@ const OtherForms = (kana, reading) => (
 const Definition = (definition, i) => (
     <div key={i} className="definition-container-plain">
         <p className="definition-type">{definition.type}</p>
-        <p className="definition-text">{definition.text}</p>
+        {definition.text === '' ? <span className='hide-card'></span> : <p className="definition-text">{definition.text}</p>}
         <p className="uk-text-meta">{definition.tags}</p>
     </div>
 );
@@ -87,6 +87,11 @@ class ResultCard extends React.Component{
         toRemoveParents.forEach(element => {
             element.parentElement.remove();
         });
+
+        let toRemoveCards = document.querySelectorAll('.hide-card');
+        toRemoveCards.forEach(element => {
+            element.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+        });
     }
 
     componentDidMount(){
@@ -94,7 +99,7 @@ class ResultCard extends React.Component{
     }
 
     render(){
-        console.log(this.props.data)
+        //console.log(this.props.data)
         const data = this.props.data;
         //const { kana, reading, spanishDefs} = this.props.data;
         return(
