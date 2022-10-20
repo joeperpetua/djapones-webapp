@@ -10,13 +10,15 @@ class Search extends React.Component{
         this.state = {
             request: window.location.pathname.split('/').splice(-2),
             error: null,
+            urlProd: 'https://apidj.joeper.myds.me/',
+            urlDev: 'http://localhost:7000/',
             isLoaded: false,
             results: []
         }
     }
 
     componentDidMount() {
-        fetch(`http://localhost:7000/?lang=${this.state.request[0]}&word=${this.state.request[1]}`)
+        fetch(`${this.state.urlProd}?lang=${this.state.request[0]}&word=${this.state.request[1]}`)
           .then(res => res.json())
           .then(
             (response) => {
@@ -32,7 +34,13 @@ class Search extends React.Component{
                     });
                 }
             },
-        )
+        ).catch(e => {
+            console.error(e);
+            this.setState({
+                isLoaded: true,
+                error: e.message
+            });
+        })
     }
 
     render(){
