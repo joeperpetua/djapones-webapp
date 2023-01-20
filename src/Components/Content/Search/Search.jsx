@@ -18,7 +18,7 @@ class Search extends React.Component{
     }
 
     componentDidMount() {
-        fetch(`${this.state.urlProd}?lang=${this.state.request[0]}&word=${this.state.request[1]}`)
+        fetch(`${this.state.urlDev}?lang=${this.state.request[0]}&word=${this.state.request[1]}`)
           .then(res => res.json())
           .then(
             (response) => {
@@ -58,9 +58,6 @@ class Search extends React.Component{
                 <div>
                     <SearchBar tooltip='hidden' query={this.state.request[1]} lang={this.state.request[0]} increment="1" />
                     <img src={loading} alt="Cargando" width="300vw" className="gif" />
-                    {/* <video loop>
-                        <source src={loading} type="video/mp4" />
-                    </video> */}
                 </div>
             );
         } else {
